@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.2"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.commands">
+        <command
+            name="OpenProjectCommand"
+            description="Open Project Command"
+            categoryId="org.eclipse.ui.category.navigate"
+            id="cc.frz.open.project">
+      </command>
+   </extension>
+      <extension
+         point="org.eclipse.ui.actionSets">
+      <actionSet
+            description="Go to Project Actions"
+            id="cc.frz.open.actions"
+            label="Go to Project"
+            visible="true">
+         <action
+               class="cc.frz.ecl.openproject.OpenProjectAction"
+               definitionId="cc.frz.open.project"
+               icon="icons/prj_obj.gif"
+               id="openType"
+               label="Go to Project"
+               menubarPath="navigate/open.ext2"
+               toolbarPath="org.eclipse.search.searchActionSet/Search"
+               tooltip="Navigate to a Project in the Explorers">
+         </action>
+        </actionSet>
+        </extension>
+     <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            sequence="M1+M2+M3+Q"
+            commandId="cc.frz.open.project"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"/>
+	</extension>
+</plugin>
