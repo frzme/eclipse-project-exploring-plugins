@@ -1,0 +1,17 @@
+A set of eclipse Plugins which allow easier handling of an eclipse workspace with lots of Projects in it.
+
+<h3>Filter Package Explorer</h3>
+The Filter Package Explorer provides a view called FPackage Explorer which extends the Package Explorer and adds a filter field at the top.
+
+<h3>Go to Project Plugin</h3>
+The Go to Project Plugin provides a dialog similar to the Open Type dialog which lists all available projects in the workspace and allows you to filter them. When selecting one here it is automatically highlighted in whatever file displaying view you might have open. If you don't have any open the Package Explorer is opened showing the project.
+
+<h3>Further Information</h3>
+You may want to look at my old blog post about the plugins <a href="http://www.frz.cc/index.php?/archives/30-Eclipse-Go-to-Project,-Filter-Package-Explorer.html">here</a>
+
+<h3>Licensing</h3>
+The Plugins are licensed under a 2-Clause BSD license. See LICENSE.
+
+<h3>Download/Installing</h3>
+The plugins can be installed from the updatesite at
+http://github.com/FrzMe/eclipse-project-exploring-plugins/raw/master/site/
