@@ -9,7 +9,7 @@
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	<groupId>cc.frz.ecl</groupId>
-	<artifactId>cc.frz.ecl.plugins-site</artifactId>
+	<artifactId>cc.frz.ecl.project-exploring-plugins-site</artifactId>
 	<version>0.6.0-SNAPSHOT</version>
 	<packaging>eclipse-update-site</packaging>
 </project>

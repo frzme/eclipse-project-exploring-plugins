@@ -19,7 +19,7 @@
 		<module>../cc.frz.ecl.filterpackageexplorer-feature</module>
 		<module>../cc.frz.ecl.openproject</module>
 		<module>../cc.frz.ecl.openproject-feature</module>
-		<module>../cc.frz.ecl.plugins-site</module>
+		<module>../cc.frz.ecl.project-exploring-plugins-site</module>
 	</modules>
 
 	<repositories>
