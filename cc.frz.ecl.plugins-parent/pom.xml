@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>cc.frz.ecl</groupId>
+	<artifactId>cc.frz.ecl-parent</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<properties>
+		<tychoVersion>0.10.0</tychoVersion>
+	</properties>
+
+	<modules>
+		<module>../cc.frz.ecl.filterpackageexplorer</module>
+		<module>../cc.frz.ecl.filterpackageexplorer-feature</module>
+		<module>../cc.frz.ecl.openproject</module>
+		<module>../cc.frz.ecl.openproject-feature</module>
+		<module>../cc.frz.ecl.plugins-site</module>
+	</modules>
+
+	<repositories>
+		<repository>
+			<id>sonatype-snapshots</id>
+			<url>http://repository.sonatype.org/content/groups/public</url>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>sonatype-snapshots</id>
+			<url>http://repository.sonatype.org/content/groups/public</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<build>
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-webdav</artifactId>
+				<version>1.0-beta-2</version>
+			</extension>
+		</extensions>
+		<plugins>
+			<plugin>
+				<groupId>org.sonatype.tycho</groupId>
+				<artifactId>tycho-maven-plugin</artifactId>
+				<version>${tychoVersion}</version>
+				<extensions>true</extensions>
+			</plugin>
+			<plugin>
+				<groupId>org.sonatype.tycho</groupId>
+				<artifactId>target-platform-configuration</artifactId>
+				<version>${tychoVersion}</version>
+				<configuration>
+					<resolver>p2</resolver>
+					<environments>
+						<environment>
+							<os>win32</os>
+							<ws>win32</ws>
+							<arch>x86</arch>
+						</environment>
+					</environments>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+
+	<profiles>
+		<!-- Eclipse 3.5 (Galileo) target profile -->
+		<profile>
+			<id>galileo</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<repositories>
+				<repository>
+					<id>galileo</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/releases/galileo</url>
+				</repository>
+			</repositories>
+		</profile>
+
+		<!-- Eclipse 3.6 (Helios) target profile -->
+		<profile>
+			<id>helios</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<repositories>
+				<repository>
+					<id>helios</id>
+					<layout>p2</layout>
+					<url>http://download.eclipse.org/releases/helios</url>
+				</repository>
+			</repositories>
+		</profile>
+	</profiles>
+</project>

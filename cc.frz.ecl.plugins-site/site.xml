@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/cc.frz.ecl.filterpackageexplorer_feature_0.6.3.qualifier.jar" id="cc.frz.ecl.filterpackageexplorer_feature" version="0.6.3.qualifier"/>
+   <feature url="features/cc.frz.ecl.openproject_feature_0.5.1.qualifier.jar" id="cc.frz.ecl.openproject_feature" version="0.5.1.qualifier"/>
+</site>
