@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: Filterpackageexplorer Plug-in
 Bundle-SymbolicName: cc.frz.ecl.filterpackageexplorer;singleton:=true
-Bundle-Version: 0.6.3.qualifier
+Bundle-Version: 0.6.4.qualifier
 Bundle-Activator: cc.frz.ecl.filterpackageexplorer.Activator
 Require-Bundle: org.eclipse.ui,
  org.eclipse.core.runtime,

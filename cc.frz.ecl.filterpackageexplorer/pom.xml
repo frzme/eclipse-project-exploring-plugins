@@ -11,6 +11,6 @@
 	<groupId>cc.frz.ecl</groupId>
 	<artifactId>cc.frz.ecl.filterpackageexplorer</artifactId>
 	<name>Filter Package Explorer Plugin</name>
-	<version>0.6.3-SNAPSHOT</version>
+	<version>0.6.4-SNAPSHOT</version>
 	<packaging>eclipse-plugin</packaging>
 </project>

@@ -11,6 +11,6 @@
 	<groupId>cc.frz.ecl</groupId>
 	<artifactId>cc.frz.ecl.openproject</artifactId>
 	<name>Open Project Plugin</name>
-	<version>0.5.1-SNAPSHOT</version>
+	<version>0.5.2-SNAPSHOT</version>
 	<packaging>eclipse-plugin</packaging>
 </project>

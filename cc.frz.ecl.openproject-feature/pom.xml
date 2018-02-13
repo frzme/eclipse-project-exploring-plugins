@@ -10,6 +10,6 @@
 	</parent>
 	<groupId>cc.frz.ecl.openproject_feature</groupId>
 	<artifactId>cc.frz.ecl.openproject_feature</artifactId>
-	<version>0.5.1-SNAPSHOT</version>
+	<version>0.5.2-SNAPSHOT</version>
 	<packaging>eclipse-feature</packaging>
 </project>

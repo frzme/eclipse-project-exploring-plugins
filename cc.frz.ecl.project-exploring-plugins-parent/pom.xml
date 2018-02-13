@@ -11,7 +11,7 @@
 	<packaging>pom</packaging>
 
 	<properties>
-		<tychoVersion>0.10.0</tychoVersion>
+		<tychoVersion>1.1.0</tychoVersion>
 	</properties>
 
 	<modules>
@@ -46,13 +46,13 @@
 		</extensions>
 		<plugins>
 			<plugin>
-				<groupId>org.sonatype.tycho</groupId>
+				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>tycho-maven-plugin</artifactId>
 				<version>${tychoVersion}</version>
 				<extensions>true</extensions>
 			</plugin>
 			<plugin>
-				<groupId>org.sonatype.tycho</groupId>
+				<groupId>org.eclipse.tycho</groupId>
 				<artifactId>target-platform-configuration</artifactId>
 				<version>${tychoVersion}</version>
 				<configuration>
@@ -70,32 +70,17 @@
 	</build>
 
 	<profiles>
-		<!-- Eclipse 3.5 (Galileo) target profile -->
+		<!-- Eclipse 4.7 (Oxygen) target profile -->
 		<profile>
-			<id>galileo</id>
-			<activation>
-				<activeByDefault>false</activeByDefault>
-			</activation>
-			<repositories>
-				<repository>
-					<id>galileo</id>
-					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/galileo</url>
-				</repository>
-			</repositories>
-		</profile>
-
-		<!-- Eclipse 3.6 (Helios) target profile -->
-		<profile>
-			<id>helios</id>
+			<id>oxygen</id>
 			<activation>
 				<activeByDefault>true</activeByDefault>
 			</activation>
 			<repositories>
 				<repository>
-					<id>helios</id>
+					<id>oxygen</id>
 					<layout>p2</layout>
-					<url>http://download.eclipse.org/releases/helios</url>
+					<url>http://download.eclipse.org/releases/oxygen/</url>
 				</repository>
 			</repositories>
 		</profile>
